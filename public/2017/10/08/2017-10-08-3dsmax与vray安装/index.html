@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="description" content="效果图">
+  <meta name="author" content="墨玫瑰">
+  <meta name="keywords" content="效果图">
+  <title>关于3dsmax以及V-ray的安装教程 ~ Amor&amp;Spem</title>
+
+  <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css"  >
+<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
+<link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css"  >
+<link rel="stylesheet" href="/lib/github-markdown/github-markdown.min.css"  >
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+
+
+
+  <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css"  >
+
+<link rel="stylesheet" href="/css/main.css"  >
+
+
+  <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css"  >
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Amor&Spem</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">首页</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">归档</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">分类</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">标签</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">关于</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" false
+         style="background: url('/img/default.png')no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask rgba-black-light flex-center">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  星期日, 十月 8日 2017, 10:10 上午
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    891 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      3 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <p>我发现有很多同学还不会3dsmax的安装啊，我在学校安装的3dsmax没有100个也有80个。各种问题的都有，没有安装文件的（有了文件也不会安装= =）；有文件不会安装的；安装缺少组件的；安装完不会破解的；破解完不会安装V-ray的；甚至还有不知道V-ray是什么的。。。。。等等等等，太多了，后来教会了几位同学，我才轻松了许多= =</p>
+<a id="more"></a>
+
+<p>​    不过很多妹纸也不会哦<del>哈哈哈<br>​    咳咳，事实证明，有没有女朋友和会不会电脑或者软件没有任何关系2333，不要问我怎么么知道的，我就是知道，还不告诉你我怎么知道的</del><br>​    说正事，我今天要教会你们怎么安装3dsmax，简单的三个步骤~<br>一、下载软件；</p>
+<p><img src="https://pic.superbed.cn/item/5e04d51976085c328975e4a1.jpg" srcset="/img/loading.gif" alt=""></p>
+<p>链接: <a href="https://pan.baidu.com/s/1sluPztz" target="_blank" rel="noopener">https://pan.baidu.com/s/1sluPztz</a> 密码: ji5c<br>  （3dsmax百度云地址，版本2014版）<br>  2014版兼顾稳定功能速度等，相对很棒的一个版本 学校电脑是09版本吧，如果有需要再私聊我吧。<br>  链接: <a href="https://pan.baidu.com/s/1hsxjE0s" target="_blank" rel="noopener">https://pan.baidu.com/s/1hsxjE0s</a> 密码: e75u<br>  （V-ray百度云地址，中文版）<br>  v-ray和3dsmax的版本是一一对应的，而V-ray又有自己的版本，现在最新的版本是3.6，不用一味的追求最新版，但也不要停留的版本太低<br>  链接: <a href="https://pan.baidu.com/s/1c2F8Kbm" target="_blank" rel="noopener">https://pan.baidu.com/s/1c2F8Kbm</a> 密码: pc6s</p>
+<p><img src="https://pic2.superbed.cn/item/5e04d59276085c3289760684.jpg" srcset="/img/loading.gif" alt=""></p>
+<p>（注册机授权软件，使用前关闭安全软件，如果你的安全软件是迈克菲，请私聊我，哈哈哈，因为你必须完全退出）<br>二、安装软件；<br>  这个就很简单了，把以上软件下载完，会出现三个文件，3dsmax主程序，就是那个箭头一样的东西，V-ray就是中间这个圆形中间一个v的图标，最后一个也就是注册机，最下面那个。</p>
+<p><img src="https://pic1.superbed.cn/item/5e04d5b076085c32897614c2.jpg" srcset="/img/loading.gif" alt=""></p>
+<p>  首先，我们先安装3dsmax主程序，很简单，双击就好，它是自解压程序，会自动解压到c盘的根目录，不用管，自解压完毕就会自动安装，选择安装位置，建议使用默认安装位置，速度和效率，以及安装插件都会简单很多，一路默认安装下一步，电脑配置较差的话速度可能会出现很慢的情况，不要着急，不要强行中断，不要强行关机，否者会出现问题。<br>  等它安装完毕就OK了</p>
+<p><img src="https://pic1.superbed.cn/item/5e04d5c676085c3289761e2e.jpg" srcset="/img/loading.gif" alt=""></p>
+<p> 安装主程序的过程中会出现这个画面，这个时候我们选择单机安装，产品信息填写<br>序列号666-69696969<br>密钥128F1<br>下一步就好</p>
+<p><img src="https://pic3.superbed.cn/item/5e04d5d976085c32897621aa.jpg" srcset="/img/loading.gif" alt=""></p>
+<p>  这个时候我们的主程序就OK了，已经可以正常的试用3dsmax了，但是这是试用模式，我们要注册成永久的，正版用户可以跳过这一步。</p>
+<p>  打开3dsmax （在开始菜单下选择Autodesk文件夹，下面有很多3ds Max启动文件找到3ds Max2014 -Simplified Chinese，双击启动，这个是中文3ds max，英文好的直接在桌面启动就好了。<br>  这里我们用英文版示意以下步骤</p>
+<p><img src="https://pic3.superbed.cn/item/5e04d5e776085c3289762486.jpg" srcset="/img/loading.gif" alt=""></p>
+<p><img src="https://pic1.superbed.cn/item/5e04d5f876085c3289762943.jpg" srcset="/img/loading.gif" alt=""></p>
+<p><img src="https://pic1.superbed.cn/item/5e04d60776085c3289762e5e.jpg" srcset="/img/loading.gif" alt=""></p>
+<p><img src="https://pic.superbed.cn/item/5e04d61976085c3289763341.jpg" srcset="/img/loading.gif" alt=""></p>
+<p><img src="https://pic1.superbed.cn/item/5e04d62676085c328976379c.jpg" srcset="/img/loading.gif" alt=""></p>
+<p>这个时候就到我们的注册机出场了</p>
+<p><img src="https://pic1.superbed.cn/item/5e04d63476085c3289763bd4.jpg" srcset="/img/loading.gif" alt=""></p>
+<p><img src="https://pic.superbed.cn/item/5e04d64076085c328976425a.jpg" srcset="/img/loading.gif" alt=""></p>
+<p><img src="https://pic.superbed.cn/item/5e04d64e76085c32897645ed.jpg" srcset="/img/loading.gif" alt=""></p>
+<p><img src="https://pic3.superbed.cn/item/5e04d65a76085c32897649c3.jpg" srcset="/img/loading.gif" alt=""></p>
+<p> 激活完成后也就意味着我们完成了3dsmax的安装和破解，下面我们来进行最后一步，V-ray的安装。<br>三、V-ray的安装<br>这个很简单，双击安装就好，记得关闭3ds max的情况进行安装。完成后打开渲染设置看一下，成功。</p>
+
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+              <span>
+                <i class="iconfont icon-inbox"></i>
+                
+                  <a class="hover-with-bg" href="/categories/%E7%8E%AF%E5%A2%83%E8%89%BA%E6%9C%AF">环境艺术</a>
+                  &nbsp;
+                
+              </span>&nbsp;&nbsp;
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/3DSMAX">3DSMAX</a>
+                
+                  <a class="hover-with-bg" href="/tags/%E6%95%99%E7%A8%8B">教程</a>
+                
+              </span>
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+  </div>
+</div>
+
+    
+  </main>
+
+  
+    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
+      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
+    <br>
+
+    
+  
+    <!-- 不蒜子统计PV -->
+    
+    &nbsp;<span id="busuanzi_container_site_pv"></span>总访问量 
+          <span id="busuanzi_value_site_pv"></span> 次&nbsp;
+  
+  
+    <!-- 不蒜子统计UV -->
+    
+    &nbsp;<span id="busuanzi_container_site_uv"></span>总访客数 
+            <span id="busuanzi_value_site_uv"></span> 人&nbsp;
+  
+  <br>
+
+
+
+    
+
+
+    <!-- cnzz Analytics icon -->
+    
+
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="/lib/jquery/jquery.min.js" ></script>
+<script src="/lib/popper/popper.min.js" ></script>
+<script src="/lib/bootstrap/js/bootstrap.min.js" ></script>
+<script src="/lib/mdbootstrap/js/mdb.min.js" ></script>
+<script src="/js/main.js" ></script>
+
+
+  <script src="/js/lazyload.js" ></script>
+
+
+
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
+
+
+  <script src="/lib/smoothscroll/SmoothScroll.min.js" ></script>
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+<!-- Plugins -->
+
+
+  
+
+  
+
+  
+
+  
+
+  <!-- cnzz Analytics -->
+  
+
+
+
+  <script src="/lib/prettify/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').addClass('prettyprint  linenums');
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script src="/lib/typed/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "关于3dsmax以及V-ray的安装教程&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script src="/lib/anchor/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "false",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script src="/lib/fancybox/jquery.fancybox.min.js" ></script>
+  <script>
+    $("#post img:not(.no-zoom img, img[no-zoom])").each(
+      function () {
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "images");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
